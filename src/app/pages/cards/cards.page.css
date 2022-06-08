@@ -1,0 +1,25 @@
+.card--content{
+    text-align: center;
+    width: 50%;
+    padding: 0;
+}
+
+article{
+    border-radius: 15px;
+}
+
+button{
+    border: none    ;
+}
+
+@media only screen and (min-width: 769px) {
+    .card--content{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .card--content{
+        width: 33%;
+    }
+}
