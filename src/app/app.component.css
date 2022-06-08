@@ -4,7 +4,7 @@ body{
     grid-template-rows: 100px auto;
 }
 
-app-cards{
+router-outlet{
     grid-row: 2/3;
     grid-column: 2/3;
 }
@@ -15,3 +15,4 @@ app-navbar{
     padding-top: 50px;
     padding-right: 10px;
 }
+
