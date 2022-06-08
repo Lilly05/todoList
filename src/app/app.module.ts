@@ -3,20 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardsComponent } from './components/cards/cards.component';
+import { CardsPage } from './pages/cards/cards.page';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { IonicModule } from '@ionic/angular';
+import { CreateCardPage } from './pages/create-card/create-card.page';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FinishedCardsComponent } from './pages/finished-cards/finished-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardsComponent
+    CardsPage,
+    CreateCardPage,
+    NavbarComponent,
+    FinishedCardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
