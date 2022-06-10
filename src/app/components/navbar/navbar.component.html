@@ -3,9 +3,9 @@
         Navigation
     </p>
     <ul class="menu-list" *ngIf="navbarActive; else notActive">
-        <li><a>Active cards</a></li>
-        <li><a>Create new card</a></li>
-        <li><a>Finished cards</a></li>
+        <li><a routerLink="/cards">Active cards</a></li>
+        <li><a routerLink="/create-card">Create new card</a></li>
+        <li><a routerLink="/finished-cards">Finished cards</a></li>
         <li><a (click)="onNavbar()"><ion-icon name="chevron-forward-outline"></ion-icon></a></li>
     </ul>
 </aside>

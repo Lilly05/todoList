@@ -8,7 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { IonicModule } from '@ionic/angular';
 import { CreateCardPage } from './pages/create-card/create-card.page';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FinishedCardsComponent } from './pages/finished-cards/finished-cards.component';
+import { FinishedCardsPage } from './pages/finished-cards/finished-cards.page';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { FinishedCardsComponent } from './pages/finished-cards/finished-cards.co
     CardsPage,
     CreateCardPage,
     NavbarComponent,
-    FinishedCardsComponent
+    FinishedCardsPage
   ],
   imports: [
     BrowserModule,

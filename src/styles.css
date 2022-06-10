@@ -10,7 +10,7 @@ body {
     grid-template-rows: 100px auto;
 }
 
-app-cards{
+app-cards, app-create-card, app-finished-cards{
     grid-row: 2/3;
     grid-column: 2/3;
 }
