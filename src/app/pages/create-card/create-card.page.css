@@ -6,6 +6,16 @@ button{
     margin-top: 10px;
 }
 
-button:hover{
+button:hover, button:active{
     background-color: lightcyan !important;
+}
+
+form{
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px){
+    form{
+        width: 80%;
+    }
 }
