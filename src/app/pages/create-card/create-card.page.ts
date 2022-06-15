@@ -12,4 +12,8 @@ export class CreateCardPage implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+
+  }
+
 }

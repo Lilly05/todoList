@@ -7,10 +7,10 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 100px 1em;
 }
 
 app-cards, app-create-card, app-finished-cards{
-    grid-row: 2/3;
+    grid-row: 2/4;
     grid-column: 2/3;
 }

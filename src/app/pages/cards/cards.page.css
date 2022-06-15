@@ -8,8 +8,16 @@ article{
     border-radius: 15px;
 }
 
+#card{
+    margin: 10px 0 !important;
+}
+
 button{
     border: none;
+}
+
+button:hover{
+    background-color: lightcyan !important;
 }
 
 @media only screen and (min-width: 769px) {
