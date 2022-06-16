@@ -1,9 +1,0 @@
-<div class="allCards">
-<div class="tile is-parent card--content container" *ngFor="let card of cards">
-    <article id="card" class="tile is-child notification has-background-primary" *ngIf="!card.isDone">
-        <p class="title">{{card.title}}</p>
-        <p class="subtitle">{{card.description}}</p>
-        <button class="button has-background-primary-dark" (click)="card.isDone = true">Done<ion-icon name="checkmark-outline"></ion-icon></button>
-    </article>
-</div>
-</div>
