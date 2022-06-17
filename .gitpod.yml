@@ -1,4 +1,17 @@
 tasks:
-  - init: npm install
-  - command: cd frontend && npm start
-  - command: cd backend && npm run start:dev
+  - name: frontend
+    before: |
+      cd ./frontend/
+    init: |
+      npm install
+      npm run build
+    command: |
+      npm run start
+
+  - name: backend
+    before: |
+      cd ./backend/
+    init: |
+      npm install
+    command: |
+      npm run start:dev
