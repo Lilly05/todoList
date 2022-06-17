@@ -15,3 +15,11 @@ tasks:
       npm install
     command: |
       npm run start:dev
+
+ports:
+  - port: 4200
+    visibility: private
+    onOpen: open-browser
+  - port: 3000
+    visibility: private
+    onOpen: open-browser
