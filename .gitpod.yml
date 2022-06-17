@@ -1,0 +1,4 @@
+tasks:
+  - init: npm install
+  - command: cd frontend && npm start
+  - command: cd backend && npm run start:dev
