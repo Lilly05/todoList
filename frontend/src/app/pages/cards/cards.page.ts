@@ -10,7 +10,6 @@ import { CardsDto } from "../../dto/cards.dto";
 })
 export class CardsPage implements OnInit {
 
-  textSample?: Observable<string | null>;
   isDone: boolean = false;
 
   public cards: CardsDto[] =
@@ -21,13 +20,10 @@ export class CardsPage implements OnInit {
       ];
 
   constructor(
-    private backendService: BackendtestService
   ) { }
 
   ngOnInit(): void {
-    this.backendService.getHelloWorl().subscribe(
-      (res) => { this.textSample = of(res.body) }
-    )
+    
   }
 
 }

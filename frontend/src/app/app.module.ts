@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FinishedCardsPage } from './pages/finished-cards/finished-cards.page';
 
 import { HttpClientModule } from '@angular/common/http';
+import { TestingComponent } from './pages/testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardsPage,
     CreateCardPage,
     NavbarComponent,
-    FinishedCardsPage
+    FinishedCardsPage,
+    TestingComponent
   ],
   imports: [
     BrowserModule,

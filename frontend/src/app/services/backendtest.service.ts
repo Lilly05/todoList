@@ -13,7 +13,7 @@ export class BackendtestService {
     private http: HttpClient
   ) { }
 
-  getHelloWorl() {
+  getHelloWorld() {
     return this.http.get(this.baseUrl, { "responseType": "text", observe: "response"})
   }
 }
