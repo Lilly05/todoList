@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bulma/css/bulma.css';
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100px 1em;
+}
+
+app-cards, app-create-card, app-finished-cards{
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
