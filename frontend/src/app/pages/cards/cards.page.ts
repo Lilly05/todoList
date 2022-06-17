@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { BackendtestService } from 'src/app/services/backendtest.service';
 import { CardsDto } from "../../dto/cards.dto";
 
 @Component({
@@ -8,6 +10,7 @@ import { CardsDto } from "../../dto/cards.dto";
 })
 export class CardsPage implements OnInit {
 
+  textSample?: Observable<string | null>;
   isDone: boolean = false;
 
   public cards: CardsDto[] =
@@ -17,9 +20,14 @@ export class CardsPage implements OnInit {
         {title: 'Seeing if this shit works', description: 'Please', isDone: false}
       ];
 
-  constructor() { }
+  constructor(
+    private backendService: BackendtestService
+  ) { }
 
   ngOnInit(): void {
+    this.backendService.getHelloWorl().subscribe(
+      (res) => { this.textSample = of(res.body) }
+    )
   }
 
 }

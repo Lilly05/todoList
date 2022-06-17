@@ -10,6 +10,8 @@ import { CreateCardPage } from './pages/create-card/create-card.page';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FinishedCardsPage } from './pages/finished-cards/finished-cards.page';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import { FinishedCardsPage } from './pages/finished-cards/finished-cards.page';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
     IonicModule.forRoot()
